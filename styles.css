@@ -20,3 +20,11 @@ html {
     font-family: 'Times New Roman', Times, serif;
 
 }
+
+img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    max-width: max-content;
+    max-height: 100px;
+  }
