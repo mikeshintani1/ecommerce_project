@@ -1,17 +1,27 @@
 
-.items {
-    background-color: aquamarine;
+#navbar {
+    background-color: rgb(233, 174, 134);
+    position: fixed;
+    top: 0px;
+    width: 100%;
     font-weight: bold;
-    padding: 20px;
+    padding: 9px;
     border-radius: 1px;
-    display: inline-flex;
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
 
 }
+
 
 html {
     box-sizing: border-box;
     font-size: 150%
 }
+
+
 
 .section {
     left: 0;
@@ -28,13 +38,12 @@ html {
 }
 
 img {
-    border: 1px solid #ddd;
-    border-radius: 4px;
     padding: 5px;
     right: 0;
     left: 0;
-    height: 470px;
+    height: 250px;
     display: flex;
+    width: auto;
   }
 
 .card__text {
@@ -55,4 +64,92 @@ img {
 .prod_column img {
     margin-top: 8px;
     vertical-align: middle;
+}
+
+.button {
+    background-color: #ddd;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #f1f1f1;
+    padding: 20px;
+    font-family: Arial;
+  }
+  
+  /* Center website */
+  .main {
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  h1 {
+    font-size: 50px;
+    word-break: break-all;
+  }
+  
+  .row {
+    margin: 8px -16px;
+  }
+  
+  /* Add padding BETWEEN each column (if you want) */
+  .row,
+  .row > .prod_column {
+    padding: 8px;
+  }
+  
+  /* Create four equal columns that floats next to each other */
+  .prod_column {
+    float: left;
+    width: 25%;
+  }
+  
+  /* Clear floats after rows */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Content */
+  .prod_content {
+    background-color: white;
+    padding: 10px;
+
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 900px) {
+    .prod_column {
+      width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .prod_column {
+      width: 100%;
+    }
+  }
+
+.header_img {
+    height: 450px;
+    width: auto;
+}
+
+.contact_img {
+    height: 100px;
+    width:auto
 }

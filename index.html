@@ -11,13 +11,16 @@
     </html>
     <body>
         <header>    
-            <ul>
-                <li class="items"><a href="#home">HOME</a></li>
-                <li class="items"><a href="#about">ABOUT</a></li>
-                <li class="items"><a href="#products">PRODUCTS</a></li>
-                <li class="items"><a href="#contracts">CONTACTS</a></li>
-                <li class="items"><a href="#cara cara">CARA CARA</a></li>
-            </ul>
+            <div id="navbar">
+                <a href="#home">HOME</a>
+                <a href="#about">ABOUT</a>
+                <a href="#products">PRODUCTS</a>
+                <a href="#contracts">CONTACTS</a>
+                <a href="#cara cara">CARA CARA</a>
+                <input type="text" placeholder="Search...">
+            </div>
+            
+        
         </header>
         <main>
             <section class="section" id="home">
@@ -27,7 +30,7 @@
                     
                     <div class="card">
                         <div class="card_image">
-                            <a href="#home"><img src="./UX-HTML-CSS/earl-wilcox-y3W0CzO063w-unsplash-alt.jpg" alt="Earl Wilcox, pottery stock photo." ></a>
+                            <a href="#home"><img src="./UX-HTML-CSS/earl-wilcox-y3W0CzO063w-unsplash-alt.jpg" alt="Earl Wilcox, pottery stock photo." class="header_img" ></a>
                         </div>
 
                         <div class="card__text">
@@ -50,14 +53,33 @@
                 <p>PRODUCTS SECTION</p>
                 <div class="prod_row">
                     <div class="prod_column">
-                        <a href="#home"><img src="./UX-HTML-CSS/oriento-l0ah3UBLppo-unsplash.jpg" alt="oriento 1" ></a>
-                            <p>lorem bathsalts</p>
-                        <a href="#home"><img src="./UX-HTML-CSS/oriento-maVIpNNtmlQ-unsplash.jpg" alt="oriento 2" ></a>
-                            <p>lorem bathsalts</p>
-                        <a href="#home"><img src="./UX-HTML-CSS/tom-crew-3uwu5K0RtaE-unsplash.jpg" alt="tom cruise1"></a>
-                            <p>lorem bathsalts</p>
-                        <a href="#home"><img src="./UX-HTML-CSS/tom-crew-7HuTGlUfQSo-unsplash.jpg" ></a>
-                            <p>lorem bathsalts</p>
+                        <div class="prod_content">
+                            <a href="#home"><img src="./UX-HTML-CSS/oriento-l0ah3UBLppo-unsplash.jpg" alt="oriento 1" ></a>
+                                <p>lorem bathsalts</p>
+                                <button class="button">Add to Cart</button>
+                        </div>
+                    </div>      
+                    <div class="prod_column">
+                        <div class="prod_content">        
+                            <a href="#home"><img src="./UX-HTML-CSS/oriento-maVIpNNtmlQ-unsplash.jpg" alt="oriento 2" ></a>
+                                <p>lorem bathsalts</p>
+                                <button class="button">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="prod_column">
+                        <div class="prod_content">
+                            <a href="#home"><img src="./UX-HTML-CSS/tom-crew-3uwu5K0RtaE-unsplash.jpg" alt="tom cruise1"></a>
+                                <p>lorem bathsalts</p>
+                                <button class="button">Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="prod_column">
+                            <div class="prod_content">  
+                            <a href="#home"><img src="./UX-HTML-CSS/tom-crew-7HuTGlUfQSo-unsplash.jpg" ></a>
+                                <p>lorem bathsalts</p>
+                                <button class="button">Add to Cart</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
         
@@ -65,9 +87,9 @@
             <section class="section" id="contracts">
                 <p>CONTACTS SECTION</p>
                 <div class="cont_row">
-                    <a href="#cara cara"><img src="/UX-HTML-CSS/icons8-instagram-96.png"></a>
-                    <a href="#cara cara"><img src="/UX-HTML-CSS/icons8-tiktok-96.png"></a>
-                    <a href="#cara cara"><img src="UX-HTML-CSS/icons8-youtube-96.png"></a>
+                    <a href="#cara cara"><img src="/UX-HTML-CSS/icons8-instagram-96.png" class="contact_img"></class></a>
+                    <a href="#cara cara"><img src="/UX-HTML-CSS/icons8-tiktok-96.png" class="contact_img"></a>
+                    <a href="#cara cara"><img src="UX-HTML-CSS/icons8-youtube-96.png" class="contact_img"></a>
                 </div>
             </section>
             <section class="section" id="cara cara">
